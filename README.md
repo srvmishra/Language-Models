@@ -3,8 +3,8 @@ This repository contains implementation of deep learning based language models u
 
 ## HuggingFace Applications
 ### Text classification
-1. [Emotion](https://huggingface.co/datasets/dair-ai/emotion) dataset, [DistilBERT-base-uncased](https://huggingface.co/distilbert-base-uncased) model.
-   - Description: Used random forests, svm, and logistic regression classifiers from **scikit-learn** on features extracted using pretrained DistilBERT base uncased model. Later, finetuned **DistilBERT base uncased** on **Emotion** dataset.
+1. Sentiment Classification in tweets using [Emotion](https://huggingface.co/datasets/dair-ai/emotion) dataset, [DistilBERT-base-uncased](https://huggingface.co/distilbert-base-uncased) model.
+   - Description: Dataset has 6 emotion categories and each tweet is tagged with a single emotion. Used random forests, svm, and logistic regression classifiers from scikit-learn on features extracted using pretrained DistilBERT base uncased model. Later, **finetuned DistilBERT base uncased**.
    - Associated file: `text_classification_emotions.ipynb`.
    - Key Results:
    - HuggingFace Link: [emotions-dataset-distilbert-base-uncased](https://huggingface.co/srvmishra832/emotions-dataset-distilbert-base-uncased).
