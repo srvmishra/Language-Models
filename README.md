@@ -21,7 +21,7 @@ This repository contains implementation of deep learning based language models u
    - Associated file: `BERT_Base_Uncased_Finetuning_on_GLUE_MRPC.ipynb`
    - Key Results:
    - HuggingFace Link: [glue-mrpc-bert-base-uncased ](https://huggingface.co/srvmishra832/glue-mrpc-bert-base-uncased)
-   - Reference: Chapter 3 [[2]](#2)
+   - Reference: Chapter 3 [[2]](#2).
 
 Implemented self attention
 
@@ -32,5 +32,5 @@ To do: Implement Cross attention, transformer encoder and decoder blocks, PyTorc
 <a id="1">[1]</a>. 
 [Natural Language Processing with Transformers](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/), O'Reilly Media, May 2022. 
 
-<a id="2">[2]</a>
+<a id="2">[2]</a>.
 [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/)
