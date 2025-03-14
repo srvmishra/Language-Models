@@ -43,7 +43,7 @@ class MultiHeadSelfAttention(nn.Module):
         v = v.view(batch_size, self.num_heads, seq_len, self.head_dim)
 
         if self.is_mask:
-            mask = torch.triu(torch.ones(seq_len, seq_len, diagonal=1)).to(x.device)
+            mask = torch.triu(torch.ones(seq_len, seq_len), diagonal=1).to(x.device)
             mask_ = mask.masked_fill_(mask.bool(), -torch.inf)
         else:
             mask_ = torch.zeros((seq_len, seq_len)).to(x.device)
