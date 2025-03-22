@@ -18,7 +18,8 @@ This repository contains implementation of deep learning based language models u
      - Tokenized both sentences together, extracted features from pretrained BERT Base Uncased model. Used these features for binary classification with random forests, svm, and logistic regression classifiers from scikit-learn.
      - Tokenized each sentence separately and extracted features for each sentence using BERT Base Uncased model. Computed cosine similarity between these features on the training set and found a threshold for maximum F1 score. Applied this threshold for final classification on test set.
      - Later, finetuned BERT Base Uncased model on both sentences tokenized together.
-   - Associated file: `BERT_Base_Uncased_Finetuning_on_GLUE_MRPC.ipynb`
+     - Extracted embeddings from combined `title`, `body`, and `comments` fields via the `sentence-transformers/multi-qa-mpnet-base-dot-v1` model and used added a `faiss` index for searching relevant comments for queries.
+   - Associated files: `BERT_Base_Uncased_Finetuning_on_GLUE_MRPC.ipynb` and `Semantic_Search_with_FAISS.ipynb`
    - Key Results:
    - HuggingFace Link: [glue-mrpc-bert-base-uncased](https://huggingface.co/srvmishra832/glue-mrpc-bert-base-uncased)
    - Reference: Chapter 3 [[2]](#2).
