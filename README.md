@@ -20,9 +20,16 @@ This repository contains implementation of deep learning based language models u
      - Later, finetuned BERT Base Uncased model on both sentences tokenized together.
    - Associated file: `BERT_Base_Uncased_Finetuning_on_GLUE_MRPC.ipynb`
    - Key Results:
-   - HuggingFace Link: [glue-mrpc-bert-base-uncased ](https://huggingface.co/srvmishra832/glue-mrpc-bert-base-uncased)
+   - HuggingFace Link: [glue-mrpc-bert-base-uncased](https://huggingface.co/srvmishra832/glue-mrpc-bert-base-uncased)
    - Reference: Chapter 3 [[2]](#2).
-
+3. Multi Label Text Classification: [GitHub Issues Dataset](https://huggingface.co/datasets/lewtun/github-issues), [Bert Base Uncased](https://huggingface.co/bert-base-uncased) model.
+   - Description:
+     - Dataset contains issues from HuggingFace Datasets GitHub repository. Each issue is associated with at least one label. Multi Label Classification Problem. Total 17 labels in the dataset.
+     - Finetuned DistilBERT base uncased model on this dataset.
+   - Associated file: `GitHub_Issues_MultiLabel_Classification.ipynb`.
+   - Key Results:
+   - HuggingFace Link: [github_issues-dataset-distilbert-base-uncased](https://huggingface.co/srvmishra832/github_issues-dataset-distilbert-base-uncased)
+   - Reference: Chapter 5 [[1]](#1), [[4]](#4).
 
 ## Transformers from scratch
 
@@ -53,3 +60,6 @@ To do: Implement Cross attention, transformer encoder and decoder blocks, PyTorc
 
 <a id="3">[3]</a>.
 [Building a Large Language Model from Scratch](https://www.amazon.com/Build-Large-Language-Model-Scratch/dp/1633437167?crid=228R4JI0P0QFR&dib=eyJ2IjoiMSJ9.XvZyIer9iV133BWXqNiVt_OOJXZheO54dvZtQly8MC25PNYZrN3OWsGLjbg3I0G9hI3LkjwhsORxvHIob3nvCZFgdSSQEFe07VkehijGxT03n4Amdw7lnXxnsOUuWXeglfHnewCcV3DjL9zWHELfh5DG1ZErzFym3S6ZxSuFzNvoPkaq0uDlD_CKwqHdC0KM_RdvIqF0_2RudgvzRli0V155KkusHRck3pG7ybp5VyqKDC_GgL_MEywLwLhFgX6kOCgV6Rq90eTgSHFd6ac8krpIYjsHWe6H3IXbfKGvMXc.473O1-iUZC0z2hdx8L5Z5ZTNxtNV9gNPw_mE7QZ5Y90&dib_tag=se&keywords=raschka&qid=1730250834&sprefix=raschk,aps,162&sr=8-1&linkCode=sl1&tag=rasbt03-20&linkId=84ee23afbd12067e4098443718842dac&language=en_US&ref_=as_li_ss_tl)
+
+<a id="4">[4]</a>.
+[Multi Label Text Classification](https://huggingface.co/blog/Valerii-Knowledgator/multi-label-classification)
