@@ -51,6 +51,7 @@ This repository contains implementation of deep learning based language models u
 
 To do: Implement Cross attention, transformer encoder and decoder blocks, PyTorch models (LSTM, GRU), finetuning GPT2 models for classification and instruction following tasks.
 
+To do: Chapters 9 and 10 of the HuggingFace NLP course (later). Chapters 6, 7.6 (read only), 11, and 12 (read and code) next.
 
 ## References
 <a id="1">[1]</a>. 
